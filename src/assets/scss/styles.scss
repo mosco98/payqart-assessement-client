@@ -1,0 +1,29 @@
+.customized-block {
+  background: rgb(114, 0, 86);
+  background: linear-gradient(
+    42deg,
+    rgba(114, 0, 86, 1) 53%,
+    rgba(227, 0, 92, 1) 100%
+  );
+  color: #fff;
+  font-size: 14px;
+}
+
+.plan-select {
+  background: rgb(114, 0, 86);
+  background: linear-gradient(
+    42deg,
+    rgba(114, 0, 86, 1) 53%,
+    rgba(227, 0, 92, 1) 100%
+  );
+  color: #fff !important;
+  border-right: 4px solid white;
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.vertical {
+  border-left: 1px solid #cacaca;
+  height: 120px;
+  left: 50%;
+}

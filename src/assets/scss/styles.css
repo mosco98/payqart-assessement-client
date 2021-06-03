@@ -1,0 +1,22 @@
+.customized-block {
+  background: #720056;
+  background: linear-gradient(42deg, #720056 53%, #e3005c 100%);
+  color: #fff;
+  font-size: 14px;
+}
+
+.plan-select {
+  background: #720056;
+  background: linear-gradient(42deg, #720056 53%, #e3005c 100%);
+  color: #fff !important;
+  border-right: 4px solid white;
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.vertical {
+  border-left: 1px solid #cacaca;
+  height: 120px;
+  left: 50%;
+}
+/*# sourceMappingURL=styles.css.map */
