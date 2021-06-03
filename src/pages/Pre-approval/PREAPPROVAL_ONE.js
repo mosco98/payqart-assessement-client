@@ -32,13 +32,13 @@ const PREAPPROVAL_ONE = ({
       return console.log("Fields cannot be empty");
     }
 
-    if (existingLoan === true) {
-      updateSubmitting(false);
-      updateStepOneSuccess(false);
-      updateError(true);
-      setErrorMsg("Cannot proceed with existing loan");
-      return console.log("Cannot proceed with existing loan");
-    }
+    // if (existingLoan === true) {
+    //   updateSubmitting(false);
+    //   updateStepOneSuccess(false);
+    //   updateError(true);
+    //   setErrorMsg("Cannot proceed with existing loan");
+    //   return console.log("Cannot proceed with existing loan");
+    // }
 
     const requestObj = { cartValue, employmentType, salaryDate, existingLoan };
 
