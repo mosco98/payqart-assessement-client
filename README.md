@@ -1,4 +1,4 @@
-# Tachnical assessment test for PayQart
+# Technical assessment test for PayQart
 
 Simple technical implementation of a web page mockup of a user pre-approval process
 
