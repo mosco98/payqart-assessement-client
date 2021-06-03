@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { OrderSummary } from "./components";
+import { OrderSummary, Loader } from "./components";
 import { PREAPPROVAL_ONE, PREAPPROVAL_TWO } from "./pages";
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
           updateStepOneSuccess={updateStepOneSuccess}
         />
       )}
+      {submitting && <Loader />}
     </div>
   );
 }

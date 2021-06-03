@@ -3,7 +3,7 @@ import { ArrowLeft } from "react-feather";
 import axios from "axios";
 import Stepper from "react-stepper-horizontal";
 
-const SERVER = "http://localhost:8000";
+const SERVER = "https://payqart-assessment-api.herokuapp.com";
 
 const PREAPPROVAL_TWO = ({
   cartValue,

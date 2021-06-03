@@ -4,7 +4,7 @@ import buildings from "../../assets/images/buildings.svg";
 import freelancer from "../../assets/images/freelancer.svg";
 import axios from "axios";
 import Stepper from "react-stepper-horizontal";
-const SERVER = "http://localhost:8000";
+const SERVER = "https://payqart-assessment-api.herokuapp.com";
 
 const PREAPPROVAL_ONE = ({
   cartValue,
@@ -71,6 +71,7 @@ const PREAPPROVAL_ONE = ({
       updateSubmitting(false);
       updateError(true);
       setErrorMsg("Network error");
+      console.log(error, errorMsg);
     }
   }
 
@@ -147,15 +148,6 @@ const PREAPPROVAL_ONE = ({
           <div className="space-y-3 my-5">
             <label>When is your next salary date?</label>
             <div className="w-full shadow-md flex items-center">
-              {/* <span
-                className="px-2 py-1 text-white"
-                style={{
-                  background: "#720056",
-                  fontSize: "18px"
-                }}
-              >
-                ₦
-              </span> */}
               <input
                 type="date"
                 className="outline-none w-full h-full px-1"
@@ -167,20 +159,25 @@ const PREAPPROVAL_ONE = ({
           <div className="space-y-3 my-5">
             <label>Do you have any existing loan(s)?</label>
             <div className="w-full shadow-md flex items-center py-2">
-              <label class="container flex items-center justify-center w-1/2 text-sm text-black">
+              <label className="container flex items-center justify-center w-1/2 text-sm text-black">
                 <input
                   type="checkbox"
-                  className="mr-3 cursor-pointer rounded-full"
+                  className="mr-3 cursor-pointer"
+                  onChange={(e) => updateExistingLoan(e.target.checked)}
                 />
-                <span class="checkmark"></span>
+                <span className="checkmark"></span>
                 Yes
               </label>
               <span className="text-gray-300" style={{ fontSize: "1.1rem" }}>
                 |
               </span>
-              <label class="container flex items-center justify-center w-1/2 text-sm text-black">
-                <input type="checkbox" className="mr-3 cursor-pointer" />
-                <span class="checkmark"></span>
+              <label className="container flex items-center justify-center w-1/2 text-sm text-black">
+                <input
+                  type="checkbox"
+                  className="mr-3 cursor-pointer"
+                  onChange={(e) => updateExistingLoan(e.target.checked)}
+                />
+                <span className="checkmark"></span>
                 No
               </label>
             </div>
