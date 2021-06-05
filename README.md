@@ -7,6 +7,8 @@ Simple technical implementation of a web page mockup for a user pre-approval pro
 - Tailwindcss
 - Sass
 
+## Mockup Images
+
 ![Payqart Preapproval page 1 (4)](https://user-images.githubusercontent.com/44283935/120900648-dc7dec00-c62d-11eb-971c-b3d53149d483.png)
 
 
